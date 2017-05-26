@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="contatooh">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.css">
+    </head>
+    <body class="container">
+        <div ng-view></div>
+
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular-route/angular-route.js"></script>
+        <script src="libs/angular-resource/angular-resource.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/controllers/ContatosController.js"></script>
+        <script src="js/controllers/ContatoController.js"></script>
+        <script src="js/services/InterceptorService.js"></script>
+    </body>
+</html>
