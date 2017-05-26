@@ -5,3 +5,4 @@ node_modules/
 public/libs/
 dist/
 scripts
+.tmp
