@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+  basePath: '',
 
 
     // frameworks to use
@@ -22,19 +22,31 @@ module.exports = function(config) {
       '../public/js/main.js',
       '../public/js/controllers/**/*.js',
       '../public/js/services/**/*.js',
-      '../test/spec/**/*Spec.js'
+      '../public/js/directives/**/*.js',
+      '../test/spec/**/*Spec.js',
+      '../public/js/directives/meus-componentes/*.html'
     ],
-
-
-    // list of files to exclude
-    exclude: [
-    ],
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      '../public/js/directives/meus-componentes/*.html': ['ng-html2js']
     },
+
+    plugins: [
+      'karma-ng-html2js-preprocessor',
+      'karma-chrome-launcher',
+      'karma-phantomjs-launcher',
+      'karma-jasmine'
+    ],
+
+    ngHtml2JsPreprocessor:{
+      moduleName: 'templates',
+      stripPrefix: '.*/public/'
+    },
+    // list of files to exclude
+    exclude: [
+    ],
 
 
     // test results reporter to use

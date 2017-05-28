@@ -1,8 +1,5 @@
 dist/
 .DS_Store
 .DS_Store?
-node_modules/
-public/libs/
 dist/
-scripts
 .tmp

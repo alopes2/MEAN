@@ -38,6 +38,9 @@ angular.module('contatooh')
                     $scope.mensagem = {texto: 'Salvo com sucesso!'};
 
                     $scope.contato = new Contato();
+
+                    // $scope.btnBackFocus = true;
+                    $scope.$broadcast('contatoSalvo');
                 },function(statusText){
                     console.log("Não foi possível obter a lista de contatos");
                     console.log(statusText);

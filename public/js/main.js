@@ -1,6 +1,6 @@
 //public/js/main.js
 
-angular.module('contatooh', ['ngRoute', 'ngResource'])
+angular.module('contatooh', ['ngRoute', 'ngResource', 'meusComponentes'])
     .config(function($routeProvider, $httpProvider/*, $locationProvider*/){
         //without this, all links should be #! and not only #
         // $locationProvider.hashPrefix('');
