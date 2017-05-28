@@ -5,6 +5,9 @@ node_js:
   - 7.10
 services:
   - mongodb
+ignore:
+  -node_modules/
+  -public/libs/
 env:
   global:
     - NODE_ENV: test
