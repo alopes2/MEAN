@@ -7,6 +7,9 @@ require('./config/passport')();
 require('./config/database.js')(config.db);
 
 http.createServer(app)
-    .listen(app.get('port'), function(){
-        console.log('This is an Express server at ' + app.get('port'));
+    .listen(config.port, config.address, function(){
+        console.log('This is an Express server at ' 
+        + config.address
+        +'(' + config.env
+        +') escutando na porta: ' + config.port);
     });
