@@ -1,5 +1,5 @@
 //contatooh/config/env/production.js
-
+console.log(process.env);
 module.exports = {
     env: 'production',
     db: process.env.OPENSHIFT_MONGODB_DB_URL + 'contatooh',
