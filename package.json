@@ -5,7 +5,6 @@
   "main": "server.js",
   "repository": "https://github.com/alopes2/MEAN.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
