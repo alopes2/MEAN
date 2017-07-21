@@ -12,7 +12,7 @@ module.exports = {
         //,OPENSHIFT_MONGODB_DB_URL + 'contatooh',
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    port: process.env.CONTATOOH_SERVICE_PORT,//OPENSHIFT_NODEJS_PORT
-    address: process.env.CONTATOOH_SERVICE_HOST,//OPENSHIFT_NODEJS_IP
+    port: process.env.CONTATOOH_SERVICE_PORT || 3000,//OPENSHIFT_NODEJS_PORT
+    address: process.env.CONTATOOH_SERVICE_HOST || '127.0.0.1',//OPENSHIFT_NODEJS_IP
     domain: process.env.OPENSHIFT_APP_DNS
     };
